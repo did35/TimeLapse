@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637EAE102C26ACDA005AE6CA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAE0F2C26ACDA005AE6CA /* ContentViewModel.swift */; };
 		63DA47022C26AC0900B61799 /* TimeLapseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA47012C26AC0900B61799 /* TimeLapseApp.swift */; };
 		63DA47042C26AC0900B61799 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA47032C26AC0900B61799 /* ContentView.swift */; };
 		63DA47062C26AC0A00B61799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DA47052C26AC0A00B61799 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637EAE0F2C26ACDA005AE6CA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		63DA46FE2C26AC0900B61799 /* TimeLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DA47012C26AC0900B61799 /* TimeLapseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLapseApp.swift; sourceTree = "<group>"; };
 		63DA47032C26AC0900B61799 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				63DA47012C26AC0900B61799 /* TimeLapseApp.swift */,
-				63DA47032C26AC0900B61799 /* ContentView.swift */,
+				63DA470F2C26AC7200B61799 /* Views */,
+				63DA47102C26AC7F00B61799 /* ViewModel */,
 				63DA47052C26AC0A00B61799 /* Assets.xcassets */,
 				63DA47072C26AC0A00B61799 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				63DA47082C26AC0A00B61799 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63DA470F2C26AC7200B61799 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63DA47032C26AC0900B61799 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63DA47102C26AC7F00B61799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				637EAE0F2C26ACDA005AE6CA /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				63DA47042C26AC0900B61799 /* ContentView.swift in Sources */,
 				63DA47022C26AC0900B61799 /* TimeLapseApp.swift in Sources */,
+				637EAE102C26ACDA005AE6CA /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
