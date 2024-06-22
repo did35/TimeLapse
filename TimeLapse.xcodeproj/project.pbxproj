@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6379CD042C273821002B8130 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				637EAE112C26BA5C005AE6CA /* AnimatedTextView.swift */,
+				6379CD002C271EC6002B8130 /* ParticleEmitterView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		63DA46F52C26AC0900B61799 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				63DA47012C26AC0900B61799 /* TimeLapseApp.swift */,
+				6379CD042C273821002B8130 /* Shared */,
 				63DA470F2C26AC7200B61799 /* Views */,
 				63DA47102C26AC7F00B61799 /* ViewModel */,
 				63DA47052C26AC0A00B61799 /* Assets.xcassets */,
@@ -83,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				63DA47032C26AC0900B61799 /* ContentView.swift */,
-				637EAE112C26BA5C005AE6CA /* AnimatedTextView.swift */,
-				6379CD002C271EC6002B8130 /* ParticleEmitterView.swift */,
 				6379CD022C272B35002B8130 /* TestImageView.swift */,
 			);
 			path = Views;
