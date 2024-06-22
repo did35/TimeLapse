@@ -8,7 +8,6 @@
 import Foundation
 
 class ContentViewModel: ObservableObject {
-    @Published var someText = "Hello ViewModel!"
     @Published var isRunning = false
     @Published var elapsedSeconds: Double = 0.0
     
