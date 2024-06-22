@@ -21,6 +21,14 @@ import QuartzCore // Not required to import explicitly
 struct AnimatedTextView: UIViewRepresentable {
     var text: String
     
+    class Coordinator: NSObject {
+        var lastText = ""
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        return Coordinator()
+    }
+    
     func makeUIView(context: Context) -> UILabel {
         let label = UILabel()
         label.font = UIFont.monospacedDigitSystemFont(ofSize: 80, weight: .bold)
@@ -31,12 +39,11 @@ struct AnimatedTextView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        let animation = CATransition() // Part of QuartzCore framework
-        animation.type = .push
-        animation.subtype = .fromTop
-        animation.duration = 0.2
-        
-        uiView.layer.add(animation, forKey: "changeTextTransition")
-        uiView.text = text
+        if context.coordinator.lastText != text {
+            UIView.transition(with: uiView, duration: 0.2, options: .transitionCrossDissolve) {
+                uiView.text = text
+            }
+            context.coordinator.lastText = text
+        }
     }
 }

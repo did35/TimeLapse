@@ -21,8 +21,11 @@ struct ContentView: View {
             )
             .ignoresSafeArea()
             VStack {
+                Spacer()
                 AnimatedTextView(text: String(format: "%.2f", vm.elapsedSeconds))
                     .frame(width: 200, height: 200)
+                    .padding()
+                Spacer()
                 
                 HStack(spacing: 20) {
                     Button(action: {vm.startStop()}) {
@@ -41,6 +44,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                Spacer()
             }
         }
     }
